@@ -15,18 +15,4 @@ module('Acceptance | list rentals', function (hooks) {
     const items = this.element.querySelectorAll('[data-testid="list-item"]');
     assert.equal(items.length, 3, 'should display 3 items')
   });
-
-  test('should link to information about the company.', async function (assert) {
-    
-  });
-
-  test('should link to contact information.', async function (assert) {
-  });
-
-
-  test('should filter the list of rentals by city.', async function (assert) {
-  });
-
-  test('should show details for a selected rental', async function (assert) {
-  });
 });

@@ -1,5 +1,6 @@
 <article class="listing" data-testid="list-item">
   <a
+    data-testid="image"
     class="image {{if this.isWide "wide"}}"
     role="button"
     onclick={{action "toggleImageSize"}}
@@ -8,12 +9,12 @@
     <small>View larger</small>
   </a>
   <div class="details">
-    <h3>{{this.rental.title}}</h3>
-    <div class="detail owner">
+    <h3 data-testid="title">{{this.rental.title}}</h3>
+    <div class="detail owner"  data-testid="owner">
       <span>Owner:</span> {{this.rental.owner}}
     </div>
     <div class="detail type">
-      <span>Type:</span> {{this.rental.category}}
+      <span>Type:</span> {{rental-property-type this.rental.category}} - {{this.rental.category}}
     </div>
     <div class="detail location">
       <span>Location:</span> {{this.rental.city}}
